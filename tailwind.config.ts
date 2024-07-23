@@ -1,7 +1,12 @@
 import type { Config } from "tailwindcss";
 
+import { ComponentsContentPath } from "@yext/search-ui-react"; 
+
 export default {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+  content: [
+    ComponentsContentPath,
+    "./src/**/*.{html,js,jsx,ts,tsx}"
+  ],
   theme: {
     extend: {
       colors: {
